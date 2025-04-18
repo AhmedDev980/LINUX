@@ -28,7 +28,7 @@ Shell (Command Line Interface - CLI)
 
 # command example
 sudo apt install nginx
-sudo - superuser. We need this to install software or make any system changes
+sudo - superuser (administrator). We need this to install software or make any system changes
 apt - package manager
 Install nginx - it will install nginx package
 
