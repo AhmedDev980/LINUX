@@ -122,3 +122,27 @@ Working with Multiple Files
 :split filename – Split screen horizontally and open another file
 :vsplit filename – Split screen vertically
 Ctrl + w + w – Switch between split screens
+
+ps aux # list processes
+ps aux | grep java | grep -v grep # to ignore search word
+kill <processid> # To kill process
+kill -9 <processid> # To force kill
+kill -3 <processid> # To get threadums or sub processes for java apps
+kill -STOP <processid> # To stop process
+kill -CONT <processid> # To continue or resume process
+renice -n 5 -p <processid> # To make less priority
+renice -n -10 -p <processid> # To make more priority
+systemctl list-units --type=service # To list the service
+systemctl stop <service name> # To stop service
+systemctl start <service name> # To start service
+Services start at the booting of server whereas process cant. Process can be converted to service.
+CPU and Memory Monitoring
+top – Real-time system monitoring
+htop – Interactive process viewer (requires installation)
+vmstat – Report system performance statistics
+free -m – Show memory usage
+Disk Monitoring
+df -h – Check disk space usage
+du -sh /path – Show disk usage of a specific directory
+iostat – Display CPU and disk I/O statistics
+lsblk # To list the disk. list blocks
